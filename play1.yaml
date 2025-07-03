@@ -1,0 +1,13 @@
+---
+ name: install apache2
+ become: true
+ hosts: [Instance-2]
+ tasks: 
+   --name: executing apache2 script
+     script: apache2.sh
+ name: install nginx
+ become: true
+ hosts: [Instance-3]
+ tasks: 
+   --name: executing apache2 script
+     script: apache2.sh
